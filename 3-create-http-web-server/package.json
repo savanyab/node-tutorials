@@ -1,0 +1,14 @@
+{
+  "name": "3-create-http-web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "savanyab <savanyab@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
