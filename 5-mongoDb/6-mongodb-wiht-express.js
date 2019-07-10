@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost/EmployeeDB';
+var url = 'mongodb://localhost';
 var str = "";
 
 app.route('/Employeeid').get(function(req, res) {
-   MongoClient.connect(url, function(err, db) {
+    MongoClient.connect(url, function (err, client) {
+       var db = client.db('EmployeeDB')
        var collection = db.collection('Employee');
        var cursor = collection.find({});
        str = "";
@@ -20,4 +21,4 @@ app.route('/Employeeid').get(function(req, res) {
        );
    });
 });
-var server = app.listen(8080, function() {});
+app.listen(8080, function() {});
