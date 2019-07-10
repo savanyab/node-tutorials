@@ -1,0 +1,14 @@
+{
+  "name": "8-filestream-pipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-read-data-from-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
